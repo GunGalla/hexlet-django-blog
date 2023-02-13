@@ -1,2 +1,9 @@
-<h1>О блоге</h1>
-<p>Эксперименты с Django на Хекслете</p>
+{% extends "base.html" %}
+
+{% block title %}Эксперименты с Django на Хекслете{% endblock %}
+
+{% block content %}
+    <h1>О блоге</h1>
+    <p>Эксперименты с Django на Хекслете</p>
+    <p>{{ tags|join:', ' }}</p>
+{% endblock %}
