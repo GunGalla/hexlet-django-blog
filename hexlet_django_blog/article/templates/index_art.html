@@ -14,5 +14,6 @@
       <h2><a href="{% url 'article' article.id %}">{{ article.name }}</a></h2>
       <div>{{ article.body|slice:":200" }}</div>
       <small><a href="{% url 'articles_update' article.id %}">Редактировать статью</a></small>
+      <small><a href="{% url 'articles_destroy' article.id %}" rel="nofollow">Удалить</a></small>
     {% endfor %}
 {% endblock %}
